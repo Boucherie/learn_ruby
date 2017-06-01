@@ -26,6 +26,9 @@ class TestTemperature < MiniTest::Test
     assert_equal 20, ftoc(68)
   end
 
+
+  #f to c # subtract 32 and multiply by .5556 (or 5/9).
+# Celsius to Fahrenheit, multiply by 1.8 (or 9/5) and add 32.
   # Now this set of tests describes a different method,
   # not ftoc() anymore, but ctof().
   def test_ctof_converts_freezing_temperature
